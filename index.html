@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Killi saluda a Adam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stadium-background">
+        <div class="avatar-container">
+            <img src="killi.png" alt="Killi avatar" class="avatar">
+            <div class="speech-bubble">
+                <p id="speech-text">¡Hola Adam! ¿Cómo estás?</p>
+                <button onclick="playAudio(0)">🔊</button>
+            </div>
+        </div>
+        <div class="buttons">
+            <button onclick="changeText(0)">¡Hola Adam! ¿Cómo estás?</button>
+            <button onclick="changeText(1)">¿Te gusta el fútbol?</button>
+            <button onclick="changeText(2)">Vamos a aprender español juntos.</button>
+        </div>
+        <audio id="audio-0" src="audio/hola.mp3"></audio>
+        <audio id="audio-1" src="audio/futbol.mp3"></audio>
+        <audio id="audio-2" src="audio/aprender.mp3"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

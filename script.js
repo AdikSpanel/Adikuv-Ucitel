@@ -6,10 +6,13 @@ const texts = [
 ];
 
 function changeText(index) {
-    document.getElementById("speech-text").innerText = texts[index];
+    document.getElementById("speech-text").textContent = texts[index];
     playAudio(index);
 }
 
 function playAudio(index) {
-    document.getElementById(`audio-${index}`).play();
+    const audio = document.getElementById(`audio-${index}`);
+    if (audio) {
+        audio.play();
+    }
 }
